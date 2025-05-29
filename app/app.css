@@ -81,6 +81,9 @@
 
     .content {
       @apply flex flex-row md:flex-col-reverse xl:flex-row xl:items-center gap-3 justify-between;
+      /* img {
+        @apply size-10
+      } */
     }
   }
 
