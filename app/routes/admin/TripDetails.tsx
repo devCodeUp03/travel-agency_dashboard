@@ -12,8 +12,15 @@ import {
 export const loader = async ({ params }: LoaderFunctionArgs) => {
   const { tripId } = params;
   if (!tripId) throw new Error("Trip ID is required");
-  const trips = await getAllTrips(4, 0);
-  const trip = await getTripById(tripId);
+
+  const [trip, trips] = await Promise.all([
+    getTripById(tripId),
+    getAllTrips(4, 0)
+  ])
+
+
+//   const trips = await getAllTrips(4, 0);
+//   const trip = await getTripById(tripId);
 
   return {
     trip,
@@ -186,6 +193,7 @@ const TripDetails = ({ loaderData }: Route.ComponentProps) => {
             </div>
           </section>
         ))}
+      </section>
         <section className="flex flex-col gap-6">
           <h2 className="p-24-semibold">Popular Trips</h2>
           <div className="trip-grid">
@@ -212,7 +220,6 @@ const TripDetails = ({ loaderData }: Route.ComponentProps) => {
             )}
           </div>
         </section>
-      </section>
     </main>
   );
 };
