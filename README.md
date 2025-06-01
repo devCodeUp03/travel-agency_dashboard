@@ -6,7 +6,7 @@ A modern, responsive dashboard web app for a travel agency — built using the l
 
 ## 🌐 Live Demo
 
-🔗 [https://travel-agency-dashboard-773e.vercel.app/](https://travel-agency-dashboard-773e.vercel.app/)
+🔗 [travel-agency-ai-dashboard](https://travel-agency-dashboard-773e.vercel.app/)
 
 ---
 
