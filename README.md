@@ -32,12 +32,3 @@ A modern, responsive dashboard web app for a travel agency — built using the l
 - **Hosting**: Vercel
 
 ---
-
-## 🧾 Scripts
-
-```bash
-npm run dev         # Start development server
-npm run build       # Build the app for production
-npm start           # Serve built app
-npm run typecheck   # Type and route validation
-```
